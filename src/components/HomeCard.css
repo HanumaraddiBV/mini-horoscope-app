@@ -1,3 +1,11 @@
+.card{
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+
+
+
 @media screen and (max-width: 425px) {
     .container-card {
       position: relative;
