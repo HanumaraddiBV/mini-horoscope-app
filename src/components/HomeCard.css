@@ -12,16 +12,17 @@
   body{
     overflow: scroll;
   }
-  .container-card {
+  /* .container-card {
     width: 300px;
     margin-top: 20px;
     margin-left: 10px;
     overflow: scroll;
-    /* font-size: 20px; */
-  }
+
+  } */
 
   .card {
-    width: 280px;
+    margin-top: 20px;
+    width: 300px;
     font-size: 13px;
     margin-left: 10px;
   }
