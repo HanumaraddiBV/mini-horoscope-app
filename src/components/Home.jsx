@@ -6,7 +6,7 @@ import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
 import "primereact/resources/primereact.min.css"; //core css
 import "primeicons/primeicons.css";
 import PropTypes from "prop-types";
-import { Button } from 'primereact/button'
+import { Button } from "primereact/button";
 import { horoscopeSigns } from "../horoscopeSIgns";
 
 import { HoroscopeContext } from "../context/HoroscopeContextProvider";
@@ -21,9 +21,17 @@ export const Home = () => {
     e.preventDefault();
 
     let checkEmail = validator.isEmail(email);
-    checkEmail
-      ? getHoroscopeData(selectedSign, selectedDate)
-      : alert("Please enter valid Email");
+    if (!username) {
+      alert("Please enter your name");
+    } else if (!selectedSign) {
+      alert("Please select your sign");
+    } else if (!selectedDate) {
+      alert("Please select  Date");
+    } else if (!checkEmail) {
+      alert("Please enter valid Email");
+    } else {
+      getHoroscopeData(selectedSign, selectedDate);
+    }
   };
 
   const getHoroscopeData = (selectedSign, selectedDate) => {
@@ -47,7 +55,7 @@ export const Home = () => {
       .catch((e) => console.log(e));
   };
   return (
-    <>
+    <div id="main-container">
       <div id="title">Horoscope App</div>
       <form id="form-data" onSubmit={handleSubmit}>
         <label htmlFor="in">Username</label>
@@ -82,10 +90,15 @@ export const Home = () => {
           <option value="Yesterday">Yesterday</option>
           <option value="Tomorrow">Tomorrow</option>
         </select>
-       
-        <Button type="submit" value="submit" label="Submit" className="p-button-raised" />
+
+        <Button
+          type="submit"
+          value="submit"
+          label="Submit"
+          className="p-button-raised"
+        />
       </form>
-    </>
+    </div>
   );
 };
 

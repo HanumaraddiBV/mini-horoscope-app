@@ -11,8 +11,7 @@ function App() {
   return (
     <div className="App">
     {!isSubmit && <Home />}
-      {isSubmit && <HoroscopeCard />}
-      
+      {isSubmit && <HoroscopeCard />} 
     </div>
   );
 }
