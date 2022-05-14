@@ -1,29 +1,26 @@
-.card{
+.card {
   border-radius: 10px;
+ width: 35em;
+ height: 680px;
   margin-top: 100px;
 }
 
-
-
-
 @media screen and (max-width: 425px) {
-    .container-card {
-      position: relative;
-      width: 400px;
-      height: 100vh;
-      left: -10px;
-      /* font-size: 20px; */
-    }
-
-    .card{
-      width: 200px;
-      font-size: 13px;
-      position: absolute;
-      left: -10;
-    }
-    .card button{
-      width: 100px;
-      font-size: 13px;
-
-    }
+  .container-card {
+    width: 400px;
+    height: 100vh;
+    margin-top: 30px;
+    margin-left: 10px;
+    /* font-size: 20px; */
   }
+
+  .card {
+    width: 90%;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .card button {
+    width: 100px;
+    font-size: 13px;
+  }
+}

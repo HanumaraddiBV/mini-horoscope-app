@@ -44,12 +44,13 @@ useEffect(() => {
     </span>
   );
   return (
+    <>
     <div className="container-card">
       <Card
       className="card"
         title={horoscopeData.username}
         subTitle={horoscopeData.email}
-        style={{ width: "35em", height: "680px"}}
+        
         footer={footer}
         header={header}
       >
@@ -60,5 +61,6 @@ useEffect(() => {
         <p style={{left: "10px"}}>{horoscopeData.date}</p>
       </Card>
     </div>
+    </>
   );
 };
