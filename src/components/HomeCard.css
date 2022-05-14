@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 425px) {
   .container-card {
-    width: 400px;
+    width: 350px;
     height: 100vh;
     margin-top: 30px;
     margin-left: 10px;
