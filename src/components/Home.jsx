@@ -23,10 +23,6 @@ export const Home = () => {
     let checkEmail = validator.isEmail(email);
     if (!username) {
       alert("Please enter your name");
-    } else if (!selectedSign) {
-      alert("Please select your sign");
-    } else if (!selectedDate) {
-      alert("Please select  Date");
     } else if (!checkEmail) {
       alert("Please enter valid Email");
     } else {
