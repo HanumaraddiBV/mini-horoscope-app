@@ -9,15 +9,19 @@
 }
 
 @media screen and (max-width: 480px) {
+  body{
+    overflow: scroll;
+  }
   .container-card {
     width: 300px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 10px;
+    overflow: scroll;
     /* font-size: 20px; */
   }
 
   .card {
-    width: 200px;
+    width: 280px;
     font-size: 13px;
     margin-left: 10px;
   }
