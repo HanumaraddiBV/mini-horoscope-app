@@ -13,8 +13,8 @@ import { HoroscopeContext } from "../context/HoroscopeContextProvider";
 export const Home = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  const [selectedSign, setSelectedSign] = useState("");
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedSign, setSelectedSign] = useState("cancer");
+  const [selectedDate, setSelectedDate] = useState("Today");
   const [horoscopeDetails, setHoroscopeDetails] = useState({});
   const { handleData, setIsSubmit } = useContext(HoroscopeContext);
   const handleSubmit = (e) => {
